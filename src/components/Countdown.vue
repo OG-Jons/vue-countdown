@@ -1,5 +1,5 @@
 <template>
-  <div v-if="seconds" class="flex content-center justify-center mt-5">
+  <div class="flex content-center justify-center mt-5">
     <div id="countdown-box">
       <div class="text-5xl">Countdown to: </div>
       <div class="text-4xl">{{endDate | formatDate}}</div>
