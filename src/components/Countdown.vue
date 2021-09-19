@@ -32,10 +32,10 @@ export default {
   name: 'Countdown',
   props: ["endDate"],
   data: () => ({
-    days: null,
-    hours: null,
-    minutes: null,
-    seconds: null
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
   }),
   computed: {
     _seconds: () => 1000,
