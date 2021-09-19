@@ -1,5 +1,5 @@
 <template>
-  <div class="flex content-center justify-center mt-5">
+  <div v-if="seconds" class="flex content-center justify-center mt-5">
     <div id="countdown-box">
       <div class="text-5xl">Countdown to: </div>
       <div class="text-4xl">{{endDate | formatDate}}</div>
@@ -32,10 +32,10 @@ export default {
   name: 'Countdown',
   props: ["endDate"],
   data: () => ({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
+    days: null,
+    hours: null,
+    minutes: null,
+    seconds: null
   }),
   computed: {
     _seconds: () => 1000,
