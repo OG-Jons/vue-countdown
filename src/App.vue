@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Countdown :end-date="new Date('2022-01-01')" />
     <Countdown :end-date="new Date('2022-04-24')" />
+    <Countdown :end-date="new Date('2022-04-15')" />
   </div>
 </template>
 
